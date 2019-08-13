@@ -1,7 +1,5 @@
 package br.com.stefananini.cursoMobileAutomacaoRunner;
 
-
-
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -11,12 +9,13 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty"}, 
-		features = "classpath:features/Aplicacao.feature", 
+		features = "classpath:features/PreencherDados.feature", 
 		monochrome = true, 
 		glue = {"br.com.stefananini.cursoMobileAutomacaoStep" }, 
-		tags = { "@001_clicando_botao_sobre" }, 
+		tags = { "@preencher_dados" }, 
 		snippets = SnippetType.CAMELCASE
 		)
-public class AplicacaoRunner {
+public class PreencherDadosRunner {
 
+	
 }
